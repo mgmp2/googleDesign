@@ -1,0 +1,18 @@
+//3 funciones y 2 directivas de control
+
+/*USE FOR GRID */
+@for $i from 1 through 12 {
+  .s#{$i} {
+    width: ($i / 12)*100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+}
+@mixin fontsLineh ($size, $weight, $lHeight) {
+  font : {
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $lHeight;
+}

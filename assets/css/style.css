@@ -1,65 +1,173 @@
-/*
-Error: Undefined variable: "$size-width".
-        on line 3 of src/scss/style.scss
+/*USE FOR GRID */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+.s1 {
+  width: 8.33333%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
 
-1: .container {
-2:   margin: 0 auto;
-3:   width: $size-width;
-4: }
-5: 
-6: .row {
-7:   margin-left: auto;
-8:   margin-right: auto;
+.s2 {
+  width: 16.66667%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
 
-Backtrace:
-src/scss/style.scss:3
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$size-width\".\A         on line 3 of src/scss/style.scss\A \A 1: .container {\A 2:   margin: 0 auto;\A 3:   width: $size-width;\A 4: }\A 5: \A 6: .row {\A 7:   margin-left: auto;\A 8:   margin-right: auto;"; }
+.s3 {
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s4 {
+  width: 33.33333%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s5 {
+  width: 41.66667%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s7 {
+  width: 58.33333%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s8 {
+  width: 66.66667%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s9 {
+  width: 75%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s10 {
+  width: 83.33333%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s11 {
+  width: 91.66667%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+.s12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #424242;
+  font-family: 'Slabo 27px', serif; }
+
+a {
+  text-decoration: none; }
+
+.newsfeed > div:first-child .newsfeed__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.float-right {
+  float: right; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.align-center {
+  text-align: center; }
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  float: left;
+  padding: 0 .75rem;
+  min-height: 1px; }
+
+img {
+  max-width: 100%; }
+
+header {
+  margin-top: 45px;
+  margin-bottom: 14px; }
+
+nav ul {
+  list-style-type: none; }
+  nav ul li {
+    display: inline-block;
+    width: 84px; }
+    nav ul li a {
+      color: #414549;
+      font-weight: 700; }
+
+#banner img {
+  margin-top: 135px;
+  margin-bottom: 45px; }
+
+.newsfeed > div:first-child .newsfeed__item {
+  padding-bottom: 0; }
+  .newsfeed > div:first-child .newsfeed__item h2 {
+    font-weight: 500; }
+
+.newsfeed {
+  margin-bottom: 135px; }
+  .newsfeed__item {
+    padding: 21px 0; }
+  .newsfeed__item span {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 14px;
+    color: #5f6368; }
+  .newsfeed__item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #424242;
+    margin-top: 7px;
+    margin-bottom: 10px; }
+  .newsfeed__item p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #414549; }
+
+.box-send {
+  background: #f2f2f3;
+  padding: 28px 0; }
+
+/*# sourceMappingURL=style.css.map */
