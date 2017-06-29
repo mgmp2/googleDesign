@@ -14,10 +14,15 @@
 h1 {
   @include fontsLineh (36px, normal , 36px);
   color: $title-gray-dark;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
+}
+span {
+  font-family: 'Roboto Mono', monospace;
+  color: $colorDate;
+
 }
 %flex {
   display: flex;
@@ -79,7 +84,19 @@ nav {
   margin-bottom: $sizeLarge;
 }
 
+.banner {
+  &__item h4 {
+    @include fontsLineh (20px, 500, 28px);
+    margin-top: $sizeLarge/2;
+    margin-bottom: $sizeLarge/2;
+  }
+  &__item p {
+    @include fontsLineh (16px, normal, 24px);
+    color: $title-gray-dark;
+    margin-bottom: $sizeLarge/2;
+  }
 
+}
 // NEWSFEED
 .newsfeed > div:first-child .newsfeed__item{
   @extend %flex;
@@ -93,15 +110,20 @@ nav {
   &__item {
     padding: 21px 0;
   }
+  &__item a {
+    line-height: 36px;
+    font-size: 14px;
+  }
   &__item span {
     @include fontsLineh (16px, normal , 14px);
-    color: $colorDate;
   }
   &__item h4 {
     @include fontsLineh (20px, 600 , 28px);
     color: $title-gray-dark;
     margin-top: 7px;
     margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+
   }
   &__item p {
     @include fontsLineh (16px, normal, 24px);
@@ -113,4 +135,10 @@ nav {
   background: lighten($colorDate, 56%);
   padding: 28px 0;
 
+}
+
+.images {
+  &__item {
+
+  }
 }

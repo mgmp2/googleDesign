@@ -1,6 +1,7 @@
 /*USE FOR GRID */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .s1 {
   width: 8.33333%;
   margin-left: auto;
@@ -84,10 +85,14 @@ h1 {
   font-weight: normal;
   line-height: 36px;
   color: #424242;
-  font-family: 'Slabo 27px', serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   text-decoration: none; }
+
+span {
+  font-family: 'Roboto Mono', monospace;
+  color: #5f6368; }
 
 .newsfeed > div:first-child .newsfeed__item {
   display: flex;
@@ -98,7 +103,7 @@ a {
   float: right; }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto; }
 
 .align-center {
@@ -139,6 +144,19 @@ nav ul {
   margin-top: 135px;
   margin-bottom: 45px; }
 
+.banner__item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 22.5px;
+  margin-bottom: 22.5px; }
+.banner__item p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #424242;
+  margin-bottom: 22.5px; }
+
 .newsfeed > div:first-child .newsfeed__item {
   padding-bottom: 0; }
   .newsfeed > div:first-child .newsfeed__item h2 {
@@ -148,18 +166,21 @@ nav ul {
   margin-bottom: 135px; }
   .newsfeed__item {
     padding: 21px 0; }
+  .newsfeed__item a {
+    line-height: 36px;
+    font-size: 14px; }
   .newsfeed__item span {
     font-size: 16px;
     font-weight: normal;
-    line-height: 14px;
-    color: #5f6368; }
+    line-height: 14px; }
   .newsfeed__item h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
     color: #424242;
     margin-top: 7px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif; }
   .newsfeed__item p {
     font-size: 16px;
     font-weight: normal;
