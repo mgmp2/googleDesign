@@ -1,0 +1,51 @@
+.container {
+  margin: 0 auto;
+  width: $size-width;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col{
+  float:left;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  padding:0 .75rem;
+  min-height:1px;
+}
+
+/*USE FOR GRID */
+$columns : 12;
+$column-width : 100%/$columns;
+$breakpoints : (s : 0, m : 768px, l : 992px); //DATA TYPE : MAP
+
+@function column-width($column){
+  @return $column-width*$column;
+}
+@mixin column($media, $min-width){
+  @media (min-width:$min-width){
+    @for $i from 1 through $columns {
+      .col.#{$media}#{$i} {
+        width: column-width($i);
+      }
+    }
+  }
+}
+@each $namSize, $namPix in $breakpoints {
+  @include column($namSize, $namPix);
+}
